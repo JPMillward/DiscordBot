@@ -79,12 +79,3 @@ class Motd():
         content = Motd.pull_content(self)
         message = Motd.discord_compliant(self, content)
         return message
-        
-
-x = Motd('https://www.endofthelinegaming.com/wp-json/wp/v2/posts?per_page=1&', '77')
-get = x.get_motd()
-if get != None:
-    for item in get:
-        print(item)
-#print(get)
-
